@@ -18,3 +18,5 @@
 
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
+sed -i 's/500/550/g' target/linux/ramips/dts/mt7621_xiaomi_mi-router-3g.dts
+# В MT7621 частота — это множитель, 550 * 2 = 1100 МГц.
